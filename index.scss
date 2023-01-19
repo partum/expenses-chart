@@ -1,0 +1,44 @@
+$mobile-width: 375px;
+$Soft-red: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+$Dark-brown: hsl(25, 47%, 15%);
+$Medium-brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$White: hsl(33, 100%, 98%);
+$Body-size: 18px;
+$Weight-normal: 400;
+$Weight-bold: 700;
+$Font-family: 'Inter', sans-serif;
+
+@mixin corner{
+    border-radius: 20px;
+    padding: 20px;
+}
+
+body {
+    background-color: $Cream;
+    font-family: $Font-family;
+    font-size: $Body-size;
+p{
+    margin: 0;
+}
+    .card {
+        height:auto;
+        max-width: 500px;
+        margin: auto;
+        .header {
+            background-color: $Soft-red;
+            color: $White;
+            font-weight: $Weight-normal;
+            @include corner;
+            #total{
+                font-weight: $Weight-bold;
+                font-size: 30px;
+            }
+        }
+
+        .body {
+            background-color: $White;
+        }
+    }
+}

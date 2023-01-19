@@ -1,0 +1,29 @@
+body {
+  background-color: #f8e9dd;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+body p {
+  margin: 0;
+}
+body .card {
+  height: auto;
+  max-width: 500px;
+  margin: auto;
+}
+body .card .header {
+  background-color: #ec775f;
+  color: #fffaf5;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 20px;
+}
+body .card .header #total {
+  font-weight: 700;
+  font-size: 30px;
+}
+body .card .body {
+  background-color: #fffaf5;
+}
+
+/*# sourceMappingURL=index.css.map */
