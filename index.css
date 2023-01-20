@@ -17,13 +17,44 @@ body .card .header {
   font-weight: 400;
   border-radius: 20px;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-body .card .header #total {
+body .card .header #balance {
   font-weight: 700;
   font-size: 30px;
 }
 body .card .body {
   background-color: #fffaf5;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  color: #93867b;
+}
+body .card .body h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #382314;
+}
+body .card .body .summary {
+  border-top: solid 1px #f8e9dd;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+body .card .body .summary #total {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+body .card .body .summary p {
+  color: #382314;
+}
+body .card .body .summary__last {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=index.css.map */

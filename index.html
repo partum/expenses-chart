@@ -9,9 +9,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Expenses chart component</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-  </style>
+  <script src="./index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -28,25 +29,32 @@
 <body>
   <div class="card">
     <div class="header"><span class="info">My balance
-        <p id="total">$921.48</p>
+        <p id="balance">$921.48</p>
       </span>
-      <span class="logo"></span>
+      <img src="./images/logo.svg" alt="Stridex">
     </div>
-    <div class="body">Spending - Last 7 days
-
-      mon
-      tue
-      wed
-      thu
-      fri
-      sat
-      sun
-
-      Total this month
-      $478.33
-
-      +2.4%
-      from last month</div>
+    <div class="body">
+      <h2>Spending - Last 7 days</h2>
+      <div>
+        mon
+        tue
+        wed
+        thu
+        fri
+        sat
+        sun
+      </div>
+      <div class="summary">
+        <span>
+          Total this month
+          <p id="total"> 0</p>
+        </span>
+        <span class="summary__last">
+          <p>+2.4%</p>
+          from last month
+        </span>
+      </div>
+    </div>
   </div>
 
 
