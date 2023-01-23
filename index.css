@@ -44,36 +44,40 @@ body .card .body .graph {
   margin: 50px 0;
   position: relative;
   align-items: flex-end;
+  margin-bottom: 30px;
 }
-body .card .body .graph__bar {
+body .card .body .graph .graph__entry {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+body .card .body .graph .graph__entry .spent {
+  background-color: #382314;
+  color: #fffaf5;
+  border-radius: 7px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+body .card .body .graph .graph__entry .bar {
   width: 55px;
   background-color: #ec775f;
   height: 100%;
   display: inline-block;
   border-radius: 5px;
 }
-body .card .body .graph__bar:hover {
+body .card .body .graph .graph__entry .bar:hover {
   background-color: #eb9c8e;
 }
-body .card .body .graph__bar p {
-  font-size: 15px;
-  text-align: center;
-  position: absolute;
-  bottom: -20px;
-}
-body .card .body .graph__bar p.daily {
-  bottom: unset;
-  top: -20px;
-  background-color: #382314;
-  color: #fffaf5;
-  border-radius: 7px;
-  padding: 5px;
-}
-body .card .body .graph__bar.maxBar {
+body .card .body .graph .graph__entry .bar.maxBar {
   background-color: #76b5bc;
 }
-body .card .body .graph__bar.maxBar:hover {
+body .card .body .graph .graph__entry .bar.maxBar:hover {
   background-color: #a2c9cd;
+}
+body .card .body .graph .graph__entry .day {
+  text-align: center;
 }
 body .card .body .summary {
   border-top: solid 1px #f8e9dd;
