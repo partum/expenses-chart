@@ -1,7 +1,7 @@
 [
   {
     "day": "mon",
-    "amount": 1.24
+    "amount": 10.24
   },
   {
     "day": "tue",
@@ -9,7 +9,7 @@
   },
   {
     "day": "wed",
-    "amount": 52.36
+    "amount": 42.36
   },
   {
     "day": "thu",

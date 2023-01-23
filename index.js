@@ -5,7 +5,7 @@
 
 
 async function populate() {
-    let total = document.getElementById('total');
+    //let total = document.getElementById('total');
     const requestURL = './data.json';
     const request = new Request(requestURL);
 
@@ -40,6 +40,13 @@ function populateGraph(obj){
     document.getElementById('sun').style.height = ((obj[6].amount/max)*100 + '%')
 
     document.getElementById(day).classList.add("maxBar");
+
+    //document.getElementById('mon').innerHTML
+    let spentEl = document.getElementsByClassName('spent');
+    console.log(spentEl)
+    for (let j = 0; j < spentEl.length; j++){
+        spentEl[j].innerHTML = obj[j].amount
+    }
 }
 
 function findMax(foo){
